@@ -1,0 +1,15 @@
+{
+  "text.spawnproofer.config.category.main": "Spawnproofer Config",
+  "text.spawnproofer.config.group.general": "General",
+  "text.spawnproofer.config.option.chunk_scan_range.name": "Overlay Render Distance",
+  "text.spawnproofer.config.option.chunk_scan_range.description": "How many chunks around the player to render the Spawnproofer Overlay. Higher values increase the scanned area but may decrease performance.",
+
+  "text.spawnproofer.config.category.report": "Report Issues",
+  "text.spawnproofer.config.button.report": "Click Here to Report Issues",
+
+  "key.category.minecraft.spawnproofer": "Spawnproofer",
+  "key.spawnproofer.toggle": "Toggle Spawnproofer Overlay",
+
+  "text.spawnproofer.message.toggle.on": "Spawnproofer Overlay toggled on",
+  "text.spawnproofer.message.toggle.off": "Spawnproofer Overlay toggled off"
+}
