@@ -1,0 +1,28 @@
+package net.lugo.spawnproofer.command;
+
+import com.mojang.brigadier.CommandDispatcher;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
+import net.lugo.spawnproofer.OverlayManager;
+import net.lugo.spawnproofer.config.ModConfig;
+import net.minecraft.client.Minecraft;
+import net.minecraft.commands.CommandBuildContext;
+
+public class SpawnprooferCommand {
+    final static Minecraft MC = Minecraft.getInstance();
+
+    public static void register(CommandDispatcher<FabricClientCommandSource> dispatcher, CommandBuildContext ignoredCommandRegistryAccess) {
+        dispatcher.register(ClientCommandManager.literal("spawnproofer")
+                .then(ClientCommandManager.literal("config")
+                        .executes(context -> {
+                            MC.schedule(() -> MC.setScreen(ModConfig.makeScreen(MC.screen)));
+                            return 1;
+                        })
+                )
+                .executes(context -> {
+                    OverlayManager.toggle();
+                    return 1;
+                })
+        );
+    }
+}

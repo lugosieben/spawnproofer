@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "spawnproofer",
+  "version": "${version}",
+  "name": "Spawnproofer",
+  "description": "See where mobs can spawn in your world with a Spawn Proof Overlay!",
+  "authors": [
+    "Lugo_Sieben"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/spawnproofer",
+    "issues": "https://github.com/lugosieben/spawnproofer/issues/new",
+    "sources": "https://github.com/lugosieben/spawnproofer"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/spawnproofer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.lugo.spawnproofer.Spawnproofer"
+    ],
+    "modmenu": [
+      "net.lugo.spawnproofer.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "spawnproofer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version_compatible}",
+    "java": ">=${java_version}",
+    "fabric-api": ">=${fabric_version}",
+    "yet_another_config_lib_v3": ">=${yacl_version}"
+  },
+  "suggests": {
+    "modmenu": ">=${modmenu_version}"
+  }
+}

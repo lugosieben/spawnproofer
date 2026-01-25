@@ -1,0 +1,15 @@
+{
+  "text.spawnproofer.config.title": "Spawnproofer Config",
+  "text.spawnproofer.config.category.main": "Spawnproofer Config",
+  "text.spawnproofer.config.group.general": "General",
+  "text.spawnproofer.config.option.light_level_threshold.name": "Light Level Threshold",
+  "text.spawnproofer.config.option.light_level_threshold.description": "At what block light should the overlay turn green? Default is 1 for spawn-proofing against most mobs in the overworld and end.",
+  "text.spawnproofer.config.option.render_distance.name": "Render Distance",
+  "text.spawnproofer.config.option.render_distance.description": "Higher values may decrease performance.",
+  "text.spawnproofer.config.option.hide_green.name": "Hide Green Dots",
+  "text.spawnproofer.config.category.report": "Report Issues",
+  "text.spawnproofer.config.button.report": "Report Issues",
+  "text.spawnproofer.config.button.report.description": "Opens the GitHub Issues page for spawnproofer",
+  "text.spawnproofer.message.toggle.on": "Spawnproofer toggled on",
+  "text.spawnproofer.message.toggle.off": "Spawnproofer toggled off"
+}
