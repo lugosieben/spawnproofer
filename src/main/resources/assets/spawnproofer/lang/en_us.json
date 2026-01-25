@@ -11,5 +11,8 @@
   "text.spawnproofer.config.button.report": "Report Issues",
   "text.spawnproofer.config.button.report.description": "Opens the GitHub Issues page for spawnproofer",
   "text.spawnproofer.message.toggle.on": "Spawnproofer toggled on",
-  "text.spawnproofer.message.toggle.off": "Spawnproofer toggled off"
+  "text.spawnproofer.message.toggle.off": "Spawnproofer toggled off",
+
+  "key.category.minecraft.spawnproofer": "Spawnproofer",
+  "key.spawnproofer.toggle": "Toggle Spawnproofer Overlay"
 }
